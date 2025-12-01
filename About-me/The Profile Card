@@ -1,0 +1,26 @@
+   <!DOCTYPE html>
+   <html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+    <div class="card">
+        <h3>Amit</h3>
+        <p> Software Worker</p>
+    </div>
+    <!--Visual Explaintion-->
+   <div class="explaintion">
+<h4>Box Model breakdown</h4>
+<ul> 
+    <li><strong>content</strong> The h3 (Name) and p (Job Title) text</li>
+    <li><strong>padding 20px</strong> Space inside the card between the text and the</li>
+    <li><strong>Border (2px solid black):</strong> The visible outline of the card
+</li>
+<li> <strong>Margin (50px )</strong> Space outside the card (50px top/bottom, auto centers it horizontally)</li>
+</ul>
+   </div>
+   </body>
+   </html>
