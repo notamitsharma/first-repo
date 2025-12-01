@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Yaaddasht Guide - कब कौन सा Code लिखें</title>
+    <style>
+        body {
+            background-color: #f0f9ff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1e40af;
+            background-color: #dbeafe;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 20px;
+            border-left: 5px solid #3b82f6;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #1e40af;
+            border-bottom: 2px solid #93c5fd;
+            padding-bottom: 10px;
+        }
+
+        .rule {
+            background-color: #fef3c7;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #f59e0b;
+        }
+
+        .use-case {
+            color: #15803d;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .code-example {
+            background-color: #1e293b;
+            color: #10b981;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+
+        .tip {
+            background-color: #dcfce7;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border-left: 4px solid #22c55e;
+        }
+
+        .remember {
+            background-color: #fce7f3;
+            padding: 10px;
+            border-radius: 5px;
+            font-style: italic;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #3b82f6;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f5f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎨 CSS Yaaddasht Guide<br>कब कौन सा Code लिखें?</h1>
+
+    <div class="section">
+        <h2>📋 1. BODY के लिए (पूरे Page के लिए)</h2>
+        <div class="rule">
+            <div class="use-case">🎯 कब use करें: जब पूरे page का look बदलना हो</div>
+            <div class="code-example">
+body {<br>
+&nbsp;&nbsp;background-color: #f4f4f9;  /* पूरे page का background */<br>
+&nbsp;&nbsp;font-family: Arial, sans-serif;  /* पूरे page का font */<br>
+}
+            </div>
+            <div class="remember">
+                💡 याद रखें: Body = पूरी किताब का cover। सबसे बाहर वाली चीज़।
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📝 2. HEADINGS के लिए (h1, h2, h3)</h2>
+        <div class="rule">
+            <div class="use-case">🎯 कब use करें: Titles और Headings को style करने के लिए</div>
+            <div class="code-example">
+h1 {<br>
+&nbsp;&nbsp;text-align: center;  /* बीच में लाने के लिए */<br>
+&nbsp;&nbsp;color: blue;  /* रंग बदलने के लिए */<br>
+&nbsp;&nbsp;font-size: 36px;  /* size बढ़ाने के लिए */<br>
+}
+            </div>
+            <div class="remember">
+                💡 याद रखें: h1 = सबसे बड़ा heading (book का title), h2 = chapters, h3 = sub-chapters
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🔗 3. LINKS के लिए (a)</h2>
+        <div class="rule">
+            <div class="use-case">🎯 कब use करें: Links को सुंदर बनाने के लिए</div>
+            <div class="code-example">
+a {<br>
+&nbsp;&nbsp;text-decoration: none;  /* underline हटाने के लिए */<br>
+&nbsp;&nbsp;color: blue;  /* link का color */<br>
+}<br>
+<br>
+a:hover {<br>
+&nbsp;&nbsp;color: red;  /* mouse रखने पर color बदले */<br>
+}
+            </div>
+            <div class="remember">
+                💡 याद रखें: a = anchor (link), :hover = mouse के ऊपर जाने पर
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>🎨 4. CLASSES के लिए (.classname)</h2>
+        <div class="rule">
+            <div class="use-case">🎯 कब use करें: जब कुछ specific elements को अलग style देना हो</div>
+            <div class="code-example">
+.alert {<br>
+&nbsp;&nbsp;color: red;  /* लाल रंग */<br>
+&nbsp;&nbsp;font-weight: bold;  /* मोटे अक्षर */<br>
+}<br>
+<br>
+HTML में:<br>
+&lt;p class="alert"&gt;यह important message है!&lt;/p&gt;
+            </div>
+            <div class="remember">
+                💡 याद रखें: Class = group बनाना। जैसे school में Class 10A
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>📊 Quick Reference Table - जल्दी देखने के लिए</h2>
+        <table>
+            <tr>
+                <th>क्या करना है?</th>
+                <th>कौन सा code?</th>
+                <th>उदाहरण</th>
+            </tr>
+            <tr>
+                <td>पूरे page का background बदलना</td>
+                <td>body { background-color: }</td>
+                <td>background-color: #f4f4f9;</td>
+            </tr>
+            <tr>
+                <td>Text को बीच में लाना</td>
+                <td>text-align: center;</td>
+                <td>h1 { text-align: center; }</td>
+            </tr>
+            <tr>
+                <td>रंग बदलना</td>
+                <td>color:</td>
+                <td>color: blue;</td>
+            </tr>
+            <tr>
+                <td>Font बदलना</td>
+                <td>font-family:</td>
+                <td>font-family: Arial;</td>
+            </tr>
+            <tr>
+                <td>मोटे अक्षर</td>
+                <td>font-weight: bold;</td>
+                <td>font-weight: bold;</td>
+            </tr>
+            <tr>
+                <td>Underline हटाना</td>
+                <td>text-decoration: none;</td>
+                <td>a { text-decoration: none; }</td>
+            </tr>
+            <tr>
+                <td>Mouse पर color बदलना</td>
+                <td>:hover</td>
+                <td>a:hover { color: red; }</td>
+            </tr>
+            <tr>
+                <td>किसी group को style देना</td>
+                <td>.classname</td>
+                <td>.alert { color: red; }</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="tip">
+        <h2>💡 याद रखने के आसान Tips:</h2>
+        <ol>
+            <li><strong>body</strong> = घर की दीवारें (पूरे page के लिए)</li>
+            <li><strong>h1, h2</strong> = बड़े-बड़े boards (headings के लिए)</li>
+            <li><strong>p</strong> = paragraphs (लंबी बातें लिखने के लिए)</li>
+            <li><strong>a</strong> = anchor/link (कहीं और ले जाने के लिए)</li>
+            <li><strong>.class</strong> = खास group (कुछ चीज़ों को अलग style देने के लिए)</li>
+            <li><strong>:hover</strong> = जादू की छड़ी (mouse रखने पर कुछ होता है)</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>🎯 Step-by-Step याद करने का तरीका:</h2>
+        <div class="rule">
+            <h3>STEP 1: सबसे पहले सोचो - किसको बदलना है?</h3>
+            <ul>
+                <li>पूरा page? → <code>body</code></li>
+                <li>बड़ा heading? → <code>h1</code></li>
+                <li>छोटा heading? → <code>h2, h3</code></li>
+                <li>Normal text? → <code>p</code></li>
+                <li>Link? → <code>a</code></li>
+                <li>कोई specific चीज़? → <code>.class</code></li>
+            </ul>
+        </div>
+
+        <div class="rule">
+            <h3>STEP 2: फिर सोचो - क्या बदलना है?</h3>
+            <ul>
+                <li>रंग? → <code>color: red;</code></li>
+                <li>Background? → <code>background-color: blue;</code></li>
+                <li>Font? → <code>font-family: Arial;</code></li>
+                <li>बीच में? → <code>text-align: center;</code></li>
+                <li>मोटा? → <code>font-weight: bold;</code></li>
+                <li>Underline हटाना? → <code>text-decoration: none;</code></li>
+            </ul>
+        </div>
+
+        <div class="rule">
+            <h3>STEP 3: Mouse पर कुछ होना चाहिए?</h3>
+            <ul>
+                <li>हाँ? → <code>:hover</code> लगाओ</li>
+                <li>नहीं? → सीधा लिखो</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="tip">
+        <h2>🔥 रोज़ Practice करने के लिए:</h2>
+        <ol>
+            <li>हर दिन एक छोटा page बनाओ</li>
+            <li>पहले सोचो: "मुझे क्या करना है?"</li>
+            <li>फिर table देखो: "इसके लिए कौन सा code है?"</li>
+            <li>Code लिखो और देखो result</li>
+            <li>गलती से मत डरो - हर developer गलती करता है!</li>
+        </ol>
+    </div>
+
+    <div class="section" style="background-color: #fee2e2; border-left-color: #ef4444;">
+        <h2>⚠️ Common Mistakes (आम गलतियाँ):</h2>
+        <ul>
+            <li>❌ <code>color</code> में spelling mistake (colour नहीं, color)</li>
+            <li>❌ Semicolon (;) भूल जाना</li>
+            <li>❌ Curly braces { } गलत जगह लगाना</li>
+            <li>❌ Class name में dot (.) भूल जाना CSS में</li>
+            <li>❌ HTML में class लिखना भूल जाना</li>
+        </ul>
+    </div>
+
+    <div class="tip" style="background-color: #ddd6fe; border-left-color: #8b5cf6;">
+        <h2>🎓 अंतिम सलाह:</h2>
+        <p style="font-size: 18px;">
+            <strong>धीरे-धीरे सीखो!</strong> एक बार में सब याद करने की कोशिश मत करो। 
+            हर दिन 2-3 properties practice करो। जल्दी ही सब automatic हो जाएगा! 
+            जैसे cycle चलाना सीखे थे, वैसे ही CSS भी सीख जाओगे! 💪
+        </p>
+    </div>
+
+</body>
+</html>
